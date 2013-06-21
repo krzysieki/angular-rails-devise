@@ -1,0 +1,28 @@
+<div class='modal-header'>
+  <a href="/users/edit" type="button" class="close">X</a>
+  <h3>Cancelling Account...</h3>
+</div>
+<div class='modal-body'>
+  <div data-ng-controller='TimerCtrl'>
+    <table>
+      <tr>
+        <td>
+          <timer autostart='true' duration='15'>
+            <div class='console'></div>
+          </timer>
+        </td>
+        <td>
+          <p>
+            &nbsp;Please wait 15 seconds before canceling your account.
+          </p>
+        </td>
+      </tr>
+    </table>
+    <div class='timer-footer'>
+      <div ng-controller='TutorialCtrl'>
+        <div ng-bind-html-unsafe='button'></div>
+      </div>
+    </div>
+  </div>
+</div>
+

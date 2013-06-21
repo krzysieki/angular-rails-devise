@@ -1,0 +1,15 @@
+%h1 My Crazy Life
+%br/
+.span12
+  - @blogs.each do |blog|
+    .well.span3
+      %h5=blog.title
+      %br/
+      %br/
+      %p
+        =blog.body
+      %br/
+      %br/
+      .timestamp
+        = "#{blog.user.name} authored #{distance_of_time_in_words(blog.created_at, Time.now)} ago"
+      %br/

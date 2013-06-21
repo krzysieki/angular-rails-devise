@@ -1,0 +1,23 @@
+%h1 Listing postings
+
+%table.table.table-striped
+  %tr
+    %th Title
+    %th Body
+    %th User
+    %th
+    %th
+    %th
+
+  - @postings.each do |posting|
+    %tr
+      %td= posting.title
+      %td= posting.body
+      %td= posting.user.name
+      %td= link_to 'Show', posting, class: 'btn btn-primary'
+      %td= link_to 'Edit', edit_posting_path(posting), class: 'btn btn-info'
+      %td= link_to 'Destroy', posting, class: 'btn btn-danger', :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Posting', new_posting_path, class: 'btn'

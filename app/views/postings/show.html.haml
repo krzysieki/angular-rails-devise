@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @posting.title
+%p
+  %b Body:
+  = @posting.body
+%p
+  %b User:
+  = @posting.user.name
+
+= link_to 'Edit', edit_posting_path(@posting)
+\|
+= link_to 'Back', postings_path
