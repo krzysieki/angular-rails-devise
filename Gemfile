@@ -10,7 +10,7 @@ end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0"
 gem "haml-rails", ">= 0.4"
-gem "bootstrap-sass", ">= 2.3.0.0"
+gem "bootstrap-sass", "~> 2.3.0.0"
 gem "devise", ">= 2.2.3"
 gem "cancan", ">= 1.6.9"
 gem "rolify", ">= 3.2.0"
